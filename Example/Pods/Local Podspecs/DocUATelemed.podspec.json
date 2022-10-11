@@ -1,0 +1,59 @@
+{
+  "name": "DocUATelemed",
+  "version": "0.1.1",
+  "summary": "Telemed library for DOCUA",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Taras Zinchenko/DocUATelemed",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Taras Zinchenko": "t.zinchenko@orderry.com"
+  },
+  "source": {
+    "git": "https://github.com/Karamzda/docUATelemed.git",
+    "tag": "0.1.1"
+  },
+  "platforms": {
+    "ios": "14.0"
+  },
+  "swift_versions": [
+    "5.0"
+  ],
+  "source_files": "DocUATelemed/Classes/**/*",
+  "frameworks": [
+    "Quickblox",
+    "QuickbloxWebRTC"
+  ],
+  "resource_bundles": {
+    "DocUATelemed": [
+      "DocUATelemed/Assets/**/*",
+      "DocUATelemed/Assets/Fonts/suisse/*"
+    ]
+  },
+  "dependencies": {
+    "QuickBlox": [
+      "~> 2.17"
+    ],
+    "Quickblox-WebRTC": [
+      "~> 2.8"
+    ],
+    "ChatLayout": [
+      "~> 1.2"
+    ],
+    "SnapKit": [
+      "~> 5.6"
+    ],
+    "Kingfisher": [
+      "~> 7.3"
+    ],
+    "DifferenceKit": [
+      "~> 1.3"
+    ],
+    "InputBarAccessoryView": [
+      "~> 5.5"
+    ]
+  },
+  "swift_version": "5.0"
+}
