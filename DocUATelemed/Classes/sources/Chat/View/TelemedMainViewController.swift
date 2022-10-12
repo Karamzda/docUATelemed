@@ -132,7 +132,12 @@ open class TelemedMainViewController: UIViewController, PhotoAttaching {
     
     // MARK: - Init
     convenience init() {
-        self.init(nibName: "TelemedMainViewController", bundle: Bundle(for: TelemedMainViewController.self))
+        let podBundle = Bundle(for: TelemedMainViewController.self)
+        guard let url = podBundle.url(forResource: "DocUATelemed", withExtension: "bundle") ,
+        let bundle = Bundle(url: url) else {
+            fatalError("cant' load DocUATelemed bundle")
+        }
+        self.init(nibName: "TelemedMainViewController", bundle: bundle)
         
     }
     

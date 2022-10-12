@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DocUATelemed'
-  s.version          = '0.1.9'
+  s.version          = '0.2.0'
   s.summary          = 'Telemed library for DOCUA'
 
 # This description is used to generate tags and improve search results.
@@ -35,13 +35,15 @@ TODO: Add long description of the pod here.
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   #s.vendored_frameworks   = "QuickBlox/QuickBlox.framework"
+  
+#  s.resources = "DocUATelemed/Classes/sources/Chat/View/*.xib"
   s.static_framework = true
   s.requires_arc = true
   s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/QuickBlox/" }
   s.prefix_header_contents = '#import <Quickblox/Quickblox.h>'
   
    s.resource_bundles = {
-     'DocUATelemed' => ['DocUATelemed/Assets/**/*', 'DocUATelemed/Assets/Fonts/suisse/*']
+     'DocUATelemed' => ['DocUATelemed/Assets/**/*', 'DocUATelemed/Assets/Fonts/suisse/*', 'DocUATelemed/Classes/sources/Chat/View/*.xib']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

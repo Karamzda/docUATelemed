@@ -9,12 +9,12 @@
 import UIKit
 import DocUATelemed
 
-class ViewController: TelemedViewController {
+class ViewController: TelemedMainViewController {
     
 
 
     override func viewDidLoad() {
-        type = .patient
+//        type = .patient
         super.viewDidLoad()
         
     }
