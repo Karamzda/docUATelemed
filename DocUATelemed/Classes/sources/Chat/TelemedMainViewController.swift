@@ -10,6 +10,7 @@ import UIKit
 import Quickblox
 import QuickLook
 import Network
+import QuickbloxWebRTC
 
 open class TelemedMainViewController: UIViewController, PhotoAttaching {
 

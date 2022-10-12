@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DocUATelemed'
-  s.version          = '0.1.8'
+  s.version          = '0.1.9'
   s.summary          = 'Telemed library for DOCUA'
 
 # This description is used to generate tags and improve search results.

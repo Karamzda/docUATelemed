@@ -7,6 +7,7 @@
 
 import Quickblox
 import QuickLook
+import QuickbloxWebRTC
 import Network
 
 public class TelemedPresenter: NSObject {

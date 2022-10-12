@@ -1,6 +1,6 @@
 {
   "name": "DocUATelemed",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "summary": "Telemed library for DOCUA",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Karamzda/DocUATelemed",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Karamzda/docUATelemed.git",
-    "tag": "0.1.7"
+    "tag": "0.1.8"
   },
   "platforms": {
     "ios": "14.0"
@@ -41,8 +41,8 @@
     ]
   },
   "dependencies": {
-    "QuickBlox": [
-
+    "Quickblox-WebRTC": [
+      "~> 2.7.6"
     ],
     "ChatLayout": [
       "~> 1.2"

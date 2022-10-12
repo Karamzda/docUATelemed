@@ -8,6 +8,7 @@
 import Foundation
 import Quickblox
 import os
+import QuickbloxWebRTC
 
 public enum TelemedError: Error {
     case unauthorized
