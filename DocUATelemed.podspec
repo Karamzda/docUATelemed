@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DocUATelemed'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = 'Telemed library for DOCUA'
 
 # This description is used to generate tags and improve search results.
@@ -34,6 +34,7 @@ TODO: Add long description of the pod here.
 #  s.frameworks = ['Quickblox', 'QuickbloxWebRTC']
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  #s.vendored_frameworks   = "QuickBlox/QuickBlox.framework"
   s.static_framework = true
   s.requires_arc = true
   s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/QuickBlox/" }
@@ -45,7 +46,7 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-   s.dependency 'QuickBlox'
+#   s.dependency 'QuickBlox'
    s.dependency 'Quickblox-WebRTC'
    s.dependency 'ChatLayout', '~> 1.2'
    s.dependency 'SnapKit', '~> 5.6'
