@@ -1,6 +1,6 @@
 {
   "name": "DocUATelemed",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "summary": "Telemed library for DOCUA",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Karamzda/DocUATelemed",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Karamzda/docUATelemed.git",
-    "tag": "0.1.4"
+    "tag": "0.1.6"
   },
   "platforms": {
     "ios": "14.0"
@@ -29,6 +29,11 @@
     "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   },
   "static_framework": true,
+  "requires_arc": true,
+  "xcconfig": {
+    "FRAMEWORK_SEARCH_PATHS": "$(PODS_ROOT)/QuickBlox/"
+  },
+  "prefix_header_contents": "#import <Quickblox/Quickblox.h>",
   "resource_bundles": {
     "DocUATelemed": [
       "DocUATelemed/Assets/**/*",
@@ -36,11 +41,8 @@
     ]
   },
   "dependencies": {
-    "QuickBlox": [
-      "~> 2.17"
-    ],
     "Quickblox-WebRTC": [
-      "~> 2.8"
+
     ],
     "ChatLayout": [
       "~> 1.2"
