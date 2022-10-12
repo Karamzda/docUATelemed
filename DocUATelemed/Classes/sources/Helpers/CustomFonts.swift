@@ -46,7 +46,7 @@ public class CustomFonts: NSObject {
         guard
             let bundleURL = Bundle(for: self).url(forResource: "DocUATelemed", withExtension: "bundle"),
             let bundle = Bundle(url: bundleURL),
-            let fontURL = bundle.url(forResource: fontName, withExtension: "ttf"),
+            let fontURL = bundle.url(forResource: fontName, withExtension: "otf"),
             let fontData = try? Data(contentsOf: fontURL) as CFData,
             let provider = CGDataProvider(data: fontData),
             let font = CGFont(provider) else {
