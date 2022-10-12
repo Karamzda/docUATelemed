@@ -7,7 +7,7 @@
 
 import UIKit
 import SnapKit
-import QuickbloxWebRTC
+import Quickblox
 import Kingfisher
 
 public class TelemedCallController: UIViewController {

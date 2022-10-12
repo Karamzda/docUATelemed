@@ -312,15 +312,6 @@ Copyright (c) 2017 QuickBlox
 
 
 
-## Quickblox-WebRTC
-
-
-QuickBlox iOS SDK is licensed under the QuickBlox SDK License.
-
-Copyright (c) 2018 QuickBlox
-
-
-
 ## SnapKit
 
 Copyright (c) 2011-Present SnapKit Team - https://github.com/SnapKit

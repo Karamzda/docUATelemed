@@ -7,7 +7,6 @@
 
 import Foundation
 import Quickblox
-import QuickbloxWebRTC
 import os
 
 public enum TelemedError: Error {

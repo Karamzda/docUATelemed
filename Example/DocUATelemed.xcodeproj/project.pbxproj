@@ -416,7 +416,6 @@
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/QuickBlox/Quickblox.framework/Quickblox",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Quickblox-WebRTC/QuickbloxWebRTC.framework/QuickbloxWebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -426,7 +425,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quickblox.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuickbloxWebRTC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

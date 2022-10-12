@@ -6,7 +6,6 @@
 //
 
 import Quickblox
-import QuickbloxWebRTC
 import QuickLook
 import Network
 
