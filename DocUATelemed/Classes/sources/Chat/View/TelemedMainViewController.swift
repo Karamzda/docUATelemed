@@ -455,7 +455,14 @@ open class TelemedMainViewController: UIViewController, PhotoAttaching {
     
     //attach file
     @objc private func attachButtonTapped(_ sender: UIButton) {
-        let permissionVc = ChatPermissionController(nibName: "ChatPermissionController", bundle: Bundle(for: TelemedMainViewController.self))
+        
+        let podBundle = Bundle(for: TelemedMainViewController.self)
+        guard let url = podBundle.url(forResource: "DocUATelemed", withExtension: "bundle") ,
+        let bundle = Bundle(url: url) else {
+            fatalError("cant' load DocUATelemed bundle")
+        }
+        
+        let permissionVc = ChatPermissionController(nibName: "ChatPermissionController", bundle: bundle)
         permissionVc.modalPresentationStyle = .fullScreen
         self.present(permissionVc, animated: true) {
             permissionVc.buildPermission(.galleryButton)

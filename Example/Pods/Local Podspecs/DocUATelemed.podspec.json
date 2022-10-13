@@ -1,6 +1,6 @@
 {
   "name": "DocUATelemed",
-  "version": "0.1.8",
+  "version": "0.2.2",
   "summary": "Telemed library for DOCUA",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Karamzda/DocUATelemed",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Karamzda/docUATelemed.git",
-    "tag": "0.1.8"
+    "tag": "0.2.2"
   },
   "platforms": {
     "ios": "14.0"
@@ -37,12 +37,13 @@
   "resource_bundles": {
     "DocUATelemed": [
       "DocUATelemed/Assets/**/*",
-      "DocUATelemed/Assets/Fonts/suisse/*"
+      "DocUATelemed/Assets/Fonts/suisse/*",
+      "DocUATelemed/Classes/sources/Chat/View/*.xib"
     ]
   },
   "dependencies": {
     "Quickblox-WebRTC": [
-      "~> 2.7.6"
+      "~> 2.8.1"
     ],
     "ChatLayout": [
       "~> 1.2"

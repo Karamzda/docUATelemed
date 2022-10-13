@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DocUATelemed'
-  s.version          = '0.2.2'
+  s.version          = '0.2.3'
   s.summary          = 'Telemed library for DOCUA'
 
 # This description is used to generate tags and improve search results.
@@ -43,7 +43,7 @@ TODO: Add long description of the pod here.
   s.prefix_header_contents = '#import <Quickblox/Quickblox.h>'
   
    s.resource_bundles = {
-     'DocUATelemed' => ['DocUATelemed/Assets/**/*', 'DocUATelemed/Assets/Fonts/suisse/*', 'DocUATelemed/Classes/sources/Chat/View/*.xib']
+     'DocUATelemed' => ['DocUATelemed/Assets/**/*', 'DocUATelemed/Assets/Fonts/suisse/*', 'DocUATelemed/Classes/sources/Chat/View/*.xib', 'DocUATelemed/Classes/sources/Chat/*.xib']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
