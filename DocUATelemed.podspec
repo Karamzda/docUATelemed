@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DocUATelemed'
-  s.version          = '0.2.1'
+  s.version          = '0.2.2'
   s.summary          = 'Telemed library for DOCUA'
 
 # This description is used to generate tags and improve search results.
@@ -48,7 +48,7 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-   s.dependency 'Quickblox-WebRTC', '~> 2.7.6'
+   s.dependency 'Quickblox-WebRTC', '~> 2.8.1'
    s.dependency 'ChatLayout', '~> 1.2'
    s.dependency 'SnapKit', '~> 5.6'
    s.dependency 'Kingfisher', '~> 7.3'
