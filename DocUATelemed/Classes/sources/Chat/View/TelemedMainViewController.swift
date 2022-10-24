@@ -12,6 +12,12 @@ import QuickLook
 import Network
 import QuickbloxWebRTC
 
+public protocol TelemedMainControllerLoggerProtocol: AnyObject {
+    func connectionStateChanged(connected: Bool)
+    func userDisconnected(with id: Int, connected: Bool)
+    
+}
+
 open class TelemedMainViewController: UIViewController, PhotoAttaching {
 
     private var previewItem: URL!
@@ -45,6 +51,7 @@ open class TelemedMainViewController: UIViewController, PhotoAttaching {
     public var sender: TelemedChatUser!
     public var orderId: Int!
     private var endTimeInterval: TimeInterval!
+    public weak var loggerDelegate: TelemedMainControllerLoggerProtocol?
     public var endDate:Date!
 
     
@@ -181,6 +188,7 @@ open class TelemedMainViewController: UIViewController, PhotoAttaching {
                 }
                 self?.reconnectionView.isHidden=true
                 self?.inputBarView?.isHidden=false
+                self?.loggerDelegate?.connectionStateChanged(connected: true)
             }
            } else {
               print("Disconnected")
@@ -188,6 +196,7 @@ open class TelemedMainViewController: UIViewController, PhotoAttaching {
                 guard self != nil else {
                     return
                 }
+                self?.loggerDelegate?.connectionStateChanged(connected: false)
                 self?.stopWaitingTimer()
                 self?.reconnectionView.isHidden=false
                 self?.inputBarView?.isHidden=true
@@ -283,6 +292,7 @@ open class TelemedMainViewController: UIViewController, PhotoAttaching {
                             // time interval of ping and whether it was successful
                             if(!success){
                                 self.stopTimer()
+                                self.loggerDelegate?.userDisconnected(with: self.recipient.id ?? 0, connected: false)
                                 self.startWaitingTimer()
                             }
                         }
@@ -320,6 +330,7 @@ open class TelemedMainViewController: UIViewController, PhotoAttaching {
                 QBChat.instance.pingUser(withID: UInt(self.recipient.id ?? 0), timeout: 2.0) { (timeInterval, success) in
                     // time interval of ping and whether it was successful
                     if(success){
+                        self.loggerDelegate?.userDisconnected(with: self.recipient.id ?? 0, connected: true)
                         self.stopWaitingTimer()
                         self.startTimer()
                     }
